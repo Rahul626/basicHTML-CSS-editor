@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/Screenshot%20(6).png" type="image/png">
+    <title>Live Editor | ScratchBoard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/Editor.css">
+ 
+
+    <script>
+        function show() {
+            var src = document.getElementById('src').value;
+            document.getElementById('view-result').srcdoc = src;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <ul class="nav justify-content-center bg-secondary">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://codepen.io/pen" target="_blank">Advance Editor</a>
+        </li>
+
+    </ul>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-6 col-6 col-sm-12">
+                <div id="content">
+                    <textarea style=" overflow:auto;" id="src" onkeyup="show()">
+       </textarea>
+                </div>
+            </div>
+            <div class="col-md-6 col-6 col-sm-12">
+                <iframe id="view-result" frameborder="0" srcdoc="<html>
+                                                                  <head>
+
+                 </head>
+                <body>
+                  <h1>Output :</h1>
+               <h4>Designed By Jamal</h4>
+                                                        
+                </html>">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="/path/to/highlight.pack.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
